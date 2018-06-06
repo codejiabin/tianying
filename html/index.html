@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>共嗨世界杯</title>
+    <link rel="stylesheet/less" href="index.less">
+    <script src="http://cdn.staticfile.org/less.js/1.7.0/less.min.js"></script>
+    <script  src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/football1.js"></script>
+    <script>less.watch();</script>
+    <script>
+      window.onload = function() {
+        document.getElementById('pitch').className = 'football-pitch ready';
+        football.play();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>共嗨世界杯</h1>
+    <div id="pitch" class="football-pitch">
+      <div class="lines">
+        <div class="halfway-line"></div>
+        <div class="center-circle"></div>
+        <div class="center-spot"></div>
+        <div class="penalty-arc-container-left">
+          <div class="penalty-arc"></div>
+        </div>
+        <div class="penalty-area-left"></div>
+        <div class="penalty-spot-left"></div>
+        <div class="goal-area-left"></div>
+        <div class="corner-area-left-top"></div>
+        <div class="corner-area-left-bottom"></div>
+        <div class="penalty-arc-container-right">
+          <div class="penalty-arc"></div>
+        </div>
+        <div class="penalty-area-right"></div>
+        <div class="penalty-spot-right"></div>
+        <div class="goal-area-right"></div>
+        <div class="corner-area-right-top"></div>
+        <div class="corner-area-right-bottom"></div>
+      </div>
+      <div class="schedules">
+        <div class="match-vs16 match-49"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-50"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-51"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-52"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-53"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-54"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-55"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs16 match-56"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs8 match-57"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs8 match-58"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs8 match-59"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs8 match-60"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs4 match-61"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""><br><img src="../images/qiuyuan4.png" width="60" height="100" alt=""></div>
+        <div class="match-vs4 match-62"><img src="../images/qiuyuan1.png" width="60" height="100" alt=""><br><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs2 match-63"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+        <div class="match-vs2 match-64"><img src="../images/qiuyuan4.png" width="60" height="100" alt=""><img src="../images/qiuyuan1.png" width="60" height="100" alt=""></div>
+      </div>
+      <div class="football-container">
+        <div id="ball" class="ball"></div>
+        <canvas id="football" width="1000" height="500"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
